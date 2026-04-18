@@ -9,7 +9,7 @@ working_directory <- ""
 dir.create(paste(working_directory, "results", sep = ""))
 results.dir <- paste(working_directory,"results/", sep = "")
 
-###Figure 3ab & Table S4 - PieDonut plots =====
+###Figure 3ab & Table S5 - PieDonut plots =====
 combined_df_syncom_4_dom <- data.frame(matrix(NA, ncol = 11))
 colnames(combined_df_syncom_4_dom) <- c("Df", "SumofSqs", "R2", "F", "Pr(>F)", "Variable","Subset", "Test", "Rank", "Dominance", "Drop_out")
 combined_df_syncom_4_dom <- combined_df_syncom_4_dom[-1,]
@@ -616,7 +616,7 @@ for (j in 1:4) {
   
 }
 
-write.table(combined_df_syncom_5_dom, paste(results.dir, "Table_S4_R2_no_dominators.tsv"), col.names =T, row.names =F, sep = "\t", quote =F)
+write.table(combined_df_syncom_5_dom, paste(results.dir, "Table_S5_R2_no_dominators.tsv"), col.names =T, row.names =F, sep = "\t", quote =F)
 
 #PieDonut plot
 source(paste(working_directory, "PieDonutCustom_SSC_FL.R", sep = ""))
