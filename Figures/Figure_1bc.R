@@ -1,3 +1,7 @@
+library("tidyr") #Version 1.3.0
+library("ggplot2") #Version 3.4.2
+library("ggtern") #Version 3.4.1
+
 working_directory <- ""
 results.dir <- paste(working_directory,"results/", sep = "")
 
