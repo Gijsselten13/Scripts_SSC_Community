@@ -1,3 +1,7 @@
+library("ggplot2") #Version 3.4.2
+library("ggvenn") #Version 0.1.10
+library("patchwork") #Version 1.2.0
+
 working_directory <- ""
 results.dir <- paste(working_directory,"results/", sep = "")
 
