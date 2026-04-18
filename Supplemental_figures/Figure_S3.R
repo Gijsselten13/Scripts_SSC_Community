@@ -7,6 +7,7 @@ library("multcompView") #Version 0.1-9
 library("plyr") #Version 1.8.8
 
 working_directory <- ""
+dir.create(paste(working_directory, "results", sep = ""))
 results.dir <- paste(working_directory,"results/", sep = "")
 
 ###Figure S3 - Shoot weights =====
