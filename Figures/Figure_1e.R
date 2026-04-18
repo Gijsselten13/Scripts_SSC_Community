@@ -1,3 +1,6 @@
+library("ggplot2") #Version 3.4.2
+library("ggrepel") #Version 0.9.3
+
 working_directory <- ""
 results.dir <- paste(working_directory,"results/", sep = "")
 
