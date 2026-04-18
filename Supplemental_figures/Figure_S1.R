@@ -2,6 +2,7 @@ library("ggplot2") #Version 3.4.2
 library("cowplot") #Version 1.1.3
 
 working_directory <- ""
+dir.create(paste(working_directory, "results", sep = ""))
 results.dir <- paste(working_directory,"results/", sep = "")
 
 KO_out <- read.table(paste(working_directory,"KO_intravariability/KO_intrafunctionality_2.tsv", sep = ""), sep = "\t", header =T)
