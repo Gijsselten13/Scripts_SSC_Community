@@ -2,6 +2,7 @@ library("ggplot2") #Version 3.4.2
 library("ggrepel") #Version 0.9.3
 
 working_directory <- ""
+dir.create(paste(working_directory, "results", sep = ""))
 results.dir <- paste(working_directory,"results/", sep = "")
 
 ###Figure 1e - KOs in simulated one-strain-per-family-SynCom =====
