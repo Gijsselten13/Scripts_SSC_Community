@@ -3,6 +3,7 @@ library("ggvenn") #Version 0.1.10
 library("patchwork") #Version 1.2.0
 
 working_directory <- ""
+dir.create(paste(working_directory, "results", sep = ""))
 results.dir <- paste(working_directory,"results/", sep = "")
 
 ###Figure 1d - KOs in SSC =====
