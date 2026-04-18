@@ -9,6 +9,7 @@ library("phyloseq") #Version 1.44.0
 library("reshape2") #Version 1.4.4
 
 working_directory <- ""
+dir.create(paste(working_directory, "results", sep = ""))
 results.dir <- paste(working_directory,"results/", sep = "")
 
 ###Figure S4 - Nodule Numbers =====
