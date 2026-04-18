@@ -3,6 +3,7 @@ library("ggplot2") #Version 3.4.2
 library("ggtern") #Version 3.4.1
 
 working_directory <- ""
+dir.create(paste(working_directory, "results", sep = ""))
 results.dir <- paste(working_directory,"results/", sep = "")
 
 ###Figures 1b and 1c - AtCC and HvCC Coverage of natural communities =====
