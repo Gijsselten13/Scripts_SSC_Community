@@ -8,7 +8,7 @@ working_directory <- ""
 dir.create(paste(working_directory, "results", sep = ""))
 results.dir <- paste(working_directory,"results/", sep = "")
 
-###Table S5 - R2 values at different taxonomic levels - all SCs =====
+###Table S4 - R2 values at different taxonomic levels - all SCs =====
 #otu table
 norm_SSC =read.table(paste(working_directory,"Isolate_tables/Original/SSC_norm.tsv", sep = ""), header=TRUE,sep="\t", row.names = 1)
 #Taxonomy table
@@ -369,4 +369,4 @@ melted_df$Taxo_order=factor(melted_df$Taxo_order, levels = c("Isolate", "Genus",
 melted_df$Variable=factor(melted_df$Variable, levels = c("Inoculum", "Host","Inoculum:Host", "Nutrient", "Experiment"))
 melted_df$Test=factor(melted_df$Test, levels = c("Taxonomy", "Function"))
 
-write.table(melted_df, paste(results.dir,"Table_S5_R2_values_all_SCs.txt", sep =""), sep = "\t", quote =F,col.names =T, row.names =F)
+write.table(melted_df, paste(results.dir,"Table_S4_R2_values_all_SCs.txt", sep =""), sep = "\t", quote =F,col.names =T, row.names =F)
