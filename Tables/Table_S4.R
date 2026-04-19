@@ -6,7 +6,7 @@ working_directory <- ""
 dir.create(paste(working_directory, "results", sep = ""))
 results.dir <- paste(working_directory,"results/", sep = "")
 
-###Table S4 - Statistical randomization test =====
+###Table S5 - Statistical randomization test =====
 SynComs <- c("AtSC", "LjSC", "HvSC", "SSC")
 
 fam_5 <- data.frame(matrix(NA, ncol =9))
@@ -243,4 +243,4 @@ for (family in families){
 row.names(new_data) <- NULL
 colnames(new_data) <- c("SynCom","Family","pvalue_conf_interval_0.025_simulations","real_pvalue")
 
-write.table(new_data, paste(results.dir, "Table_S4_Statistical_randomization_test.tsv",sep =""), row.names =F, col.names =T, quote =F, sep = "\t")
+write.table(new_data, paste(results.dir, "Table_S5_Statistical_randomization_test.tsv",sep =""), row.names =F, col.names =T, quote =F, sep = "\t")
