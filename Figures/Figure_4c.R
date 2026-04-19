@@ -217,7 +217,7 @@ KO_SSC_only_2 <- t(t(KO_SSC_only)/rowSums(t(KO_SSC_only)))
 KO_SSC_ex_only_2 <- t(t(KO_SSC_ex_only)/rowSums(t(KO_SSC_ex_only)))
 
 # Extract KOs associated with Xanthomonadaceae and without dominators families
-KOs <- empty_vector_all_2_all_sub[empty_vector_all_2_all_sub$Group == "Xanthomonadaceae no dominators", ]
+KOs <- empty_vector_all_2_all_sub[empty_vector_all_2_all_sub$Group == "Xanthomonadaceae_no_dominators", ]
 KOs_LjSC <- KOs$KO[KOs$Data == "LjSC"]
 KOs_HvSC <- KOs$KO[KOs$Data == "HvSC"]
 
@@ -350,7 +350,7 @@ samples_df_sub_3 <- subset(samples_df_sub_2, samples_df_sub_2$Inoculum == "LjSC"
 KO_SSC_only_2 <- t(t(KO_SSC_only)/rowSums(t(KO_SSC_only)))
 KO_SSC_ex_only_2 <- t(t(KO_SSC_ex_only)/rowSums(t(KO_SSC_ex_only)))
 
-KOs <- empty_vector_all_2_all_sub[empty_vector_all_2_all_sub$Group == "Pseudomonadacaea no dominators LjSC", ]
+KOs <- empty_vector_all_2_all_sub[empty_vector_all_2_all_sub$Group == "Pseudomonadacaea_no_dominators LjSC", ]
 KOs_Lj <- KOs$KO[KOs$Data == "Lj"]
 KOs_At <- KOs$KO[KOs$Data == "At"]
 
