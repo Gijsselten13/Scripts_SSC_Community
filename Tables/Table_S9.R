@@ -4,7 +4,8 @@ working_directory <- ""
 dir.create(paste(working_directory, "results", sep = ""))
 results.dir <- paste(working_directory,"results/", sep = "")
 
-###Table S9 - KO overlap in natural rhizospheres vs natural soils =====
+###Table S9 - KOs in Soil  =====
+#KO overlap in natural rhizospheres vs natural soils
 
 groups <- c("cucumber_rhizosphere","cucumber_soil","juanjo_arabidopsis_soil", "juanjo_arabidopsis_rhizosphere","stringlis_arabidopsis_rhizosphere","stringlis_arabidopsis_soil","wheat_ofek_rhizosphere","wheat_ofek_soil")
 
@@ -45,7 +46,7 @@ colnames(dataset) <- c("Soil KOs", "Soil KO overlap", "Soil KO overlap (%)", "Rh
 
 write.table(dataset, paste(results.dir,"Table_S9_Soil_Rhizosphere_KO_overlap.tsv", sep = ""), sep = "\t", quote =F, row.names =T, col.names =T)
 
-###Table S9 - Stats of 266 and 852 KOs in natural rhizospheres =====
+#Table S9 - Stats of 266 and 852 KOs in natural rhizospheres
 Jose_266 <- read.table(paste(working_directory, "Natural_soil/266_sig_in_natural_rhizospheres.tsv", sep = ""), header =T)
 Jose_852 <- read.table(paste(working_directory, "Natural_soil/852_sig_in_natural_rhizospheres.tsv", sep = ""), header =T)
 
@@ -167,3 +168,4 @@ dataset <- data.frame(c("Lopez et al. (2023)", "Lopez et al. (2023)", "Sanchez e
 colnames(dataset) <- c("Data", "KO set", "Number of Rhizosphere KOs", "Union of KO set and Rhizosphere KOs","Overlap KOs", "Hypergeometric test p-value", "Fisher test p-value")
 
 write.table(dataset, paste(results.dir,"Table_S9_266_852_KOs_in_Natural_soil.tsv", sep = ""), sep = "\t", quote =F, row.names =T, col.names =T)
+
