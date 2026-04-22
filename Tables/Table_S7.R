@@ -45,7 +45,7 @@ for (plant in plants){
 row.names(KO_table_2) <- NULL
 colnames(KO_table_2) <- c("Plant", "SynCom", "No_of_sig_KOs", "SynCom_comparison", "Overlap_present", "Overlap_significant")
 
-write.table(KO_table_2, paste(results.dir, "Table_S6_KO_overlap_with_dom.txt", sep = ""), sep = "\t", row.names = T, col.names =T, quote =F)
+write.table(KO_table_2, paste(results.dir, "Table_S7_KO_overlap_with_dom.txt", sep = ""), sep = "\t", row.names = T, col.names =T, quote =F)
 
 #Deseq2 file without dominators
 input_table <- read.table(paste(working_directory, "/DESeq2/Sig_KO_all_no_nod_rhizo.txt", sep = ""), header=T, sep="\t")
@@ -89,4 +89,4 @@ for (plant in plants){
 row.names(KO_table_2) <- NULL
 colnames(KO_table_2) <- c("Plant", "SynCom", "No_of_sig_KOs", "SynCom_comparison", "Overlap_present", "Overlap_significant")
 
-write.table(KO_table_2, paste(results.dir, "Table_S6_KO_overlap_without_dom.txt", sep = ""), sep = "\t", row.names = T, col.names =T, quote =F)
+write.table(KO_table_2, paste(results.dir, "Table_S7_KO_overlap_without_dom.txt", sep = ""), sep = "\t", row.names = T, col.names =T, quote =F)
