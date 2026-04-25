@@ -2,7 +2,7 @@
 
 The R scripts in this repository generate the figures, supplementary figures, supplementary tables in the manuscript: *Functional capacities drive recruitment of bacteria into plant root microbiota*. These scripts can be run on the SSC data that is downloadable under this Zenodo link: https://zenodo.org/records/15656403. By downloading the data, the full path where the data is stored can be inserted in the *working_directory* line, and everything should be compatible.
 
-In addition, some files that are used to generate these figures and tables were generated separately and can be found in any of the other folders. Lastly, Rscripts that are part of the Shiny app belonging to this manuscript are included as well (Shiny app: https://pm-bacterial-genetics-au.shinyapps.io/SSC_community_app/ ). An overview of the scripts:
+In addition, some files that are used to generate these figures and tables were generated separately and can be found in any of the other folders. Lastly, Rscripts that are part of the Shiny app belonging to this manuscript are included as well (Shiny app: https://pm-bacterial-genetics-au.shinyapps.io/SSC_community_app/ ). The full code of everything can be found in *Full_Code_SSC.R*, while each individual script can be found in the folders. An overview of the scripts:
 
 ## Figures
 
