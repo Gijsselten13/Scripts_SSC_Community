@@ -3,7 +3,7 @@ dir.create(paste(working_directory, "results", sep = ""))
 results.dir <- paste(working_directory,"results/", sep = "")
 
 
-###Script to generate boxplots.txt - - Necessary for 5f and S25 =====
+###Script to generate boxplots.txt - - Necessary for 5f and S28 =====
 top <- read.table(paste(working_directory, "Annotations/pathway_top.txt", sep = ""), header=F, sep="\t")
 KO_to_pathway <- read.table(paste(working_directory, "Annotations/KO_to_pathway.txt", sep = ""), header=T, sep="\t")
 KO_to_pathway$V3 <- top$V2[match(KO_to_pathway$V2, top$V1)]
