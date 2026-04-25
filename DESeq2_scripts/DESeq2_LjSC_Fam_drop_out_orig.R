@@ -66,11 +66,6 @@ for (inoculum in unique(metadata$Subset)) {
   #Here is the input for each comparison between mutant vs WT
   res_col <- lfcShrink(DEseq2_meta_col, coef="Compartment_Root_vs_Input")
   
-  #alpha = 0.05
-  #sigtab_col = res_col[which(res_col$padj < alpha), ]
-  
-  #sigtab_col <- sigtab_col[sigtab_col$log2FoldChange >= 0, ]
-  
   res_col$KO <- row.names(res_col)
   
   res_col$Subset <- paste(inoculum)
