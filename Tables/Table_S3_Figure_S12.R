@@ -470,7 +470,7 @@ for (group in groups){
 }
 
 #Statistical deviations of trend
-write.table(data_stat, paste(working_directory, "Table_S3_R2_simulation_stats.txt", sep =""), sep= "\t", quote =F, row.names =F, col.names=T)
+write.table(data_stat, paste(results.dir, "Table_S3_R2_simulation_stats.txt", sep =""), sep= "\t", quote =F, row.names =F, col.names=T)
 
 R2_correlations <- ggscatter(R2_values_5, x="Tax_R2", y="Func_R2", color = "Simulation_2", conf.int = F,alpha = 0.7,
                              palette = c(Simulation_2 = "black", SSC_SC = "#F8766D",SSC_PL = "#80b006")) +
