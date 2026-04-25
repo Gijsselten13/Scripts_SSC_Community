@@ -7,7 +7,7 @@ working_directory <- ""
 dir.create(paste(working_directory, "results", sep = ""))
 results.dir <- paste(working_directory,"results/", sep = "")
 
-###sPLS-DA - Burkholderiaceae without dominators - Plants =====
+###sPLS-DA - Burkholderiaceae without dominators - SynComs =====
 #otu table
 KO_SSC=read.table(paste(working_directory, "sPLS-DA/isolate_subset_data/Burkholderiaceae_KO_no_dom.tsv", sep =""), header=TRUE,sep="\t", row.names = 1)
 
