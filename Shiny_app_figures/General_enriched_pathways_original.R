@@ -7,7 +7,7 @@ working_directory_SA = paste(working_directory, "Shiny_app/", sep = "")
 dir.create(paste(working_directory_SA, "results", sep = ""))
 results.dir_SA <- paste(working_directory_SA,"results/", sep = "")
 
-###Figure S27b - General enriched pathways =====
+###Similar to figure S27b - General enriched pathways =====
 
 table <- read.table(paste(working_directory_SA, "boxplots_full.txt", sep = ""), header = T, sep = "\t", row.names =1)
 
