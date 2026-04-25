@@ -90,8 +90,6 @@ ara_RS$Sample <- gsub("-","_", ara_RS$Sample)
 colnames(JJ_samples)[colnames(JJ_samples) == "label"] <- "Sample"
 ara_RS_cov <- left_join(ara_RS, JJ_samples)
 ara_RS_cov <- ara_RS_cov %>% dplyr::select(-X.query, -Contig, -origin, -method, -source)
-ara_RS_cov_sum <- aggregate(. ~ KEGG_ko, data = ara_RS_cov, FUN = sum)
-
 ara_RS_cov_sum <- ara_RS_cov %>% dplyr::count(KEGG_ko, Sample)
 ara_RS_cov_sum_2 <- ara_RS_cov_sum[!grepl("#", ara_RS_cov_sum$Sample),]
 feature.table <- ara_RS_cov_sum_2 %>% pivot_wider(names_from = Sample, values_from = n, values_fill = 0)
