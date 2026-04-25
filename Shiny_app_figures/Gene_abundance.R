@@ -7,7 +7,7 @@ working_directory_SA = paste(working_directory, "Shiny_app/", sep = "")
 dir.create(paste(working_directory_SA, "results", sep = ""))
 results.dir_SA <- paste(working_directory_SA,"results/", sep = "")
 
-###Similar to figure S18-S22 - Gene abundance bar chart =====
+###Similar to figure S19-S23 - Gene abundance bar chart =====
 table = read.table(paste(working_directory_SA,"Abundances_full.tsv", sep = ""), header =T, sep = "\t")
 genes = table$Gene
 
