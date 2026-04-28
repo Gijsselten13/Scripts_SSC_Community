@@ -71,3 +71,10 @@ p
 pdf(file = paste(results.dir, "Figure_5g_Significant.Dotplot.90_266.horizontal.pdf", sep = ""),width = 16, height = 6)
 p
 dev.off()
+
+# Save tables
+kos266_pval$adj_pvalue[kos266_pval$group == "Remove"] <- NA
+kos266_pval <- kos266_pval %>% select(-log_pvalue, -log_adj_pvalue, -group)
+colnames(kos266_pval)[10] <- "no_of_isolates"
+kos266_pval <- merge(kos266_pval, kos266_pway %>% select(ko,map), by="ko")
+write.table(kos266_pval, paste(results.dir, "barnard_90_266.pathways.tsv", sep = ""),sep="\t", quote=FALSE, row.names = FALSE)
