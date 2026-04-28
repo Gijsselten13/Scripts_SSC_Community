@@ -10,7 +10,7 @@ Rscripts to generate the different panels of the five main figures in the manusc
 
 ## Supplemental figures
 
-Rscripts to generate the different supplementary figures in the manuscript. The script to also generate Table S6 is also included in this folder as the code to generate Figure S15 is entangled with Table S6.
+Rscripts to generate the different supplementary figures in the manuscript. The script to also generate Table S6 is also included in this folder as the code to generate Figure S15 is entangled with Table S6. To generate Figure S30b, a python script was used. 
 
 ## Tables
 
@@ -19,23 +19,25 @@ Rscripts to generate the different supplementary tables in the manuscript. The s
 ## Intermediate files
 
 Rscripts to generate intermediate files that were used to generate figures, supplementary figures and supplementary tables. These include:
-- KO intravariability across the four SynComs (Fig S1A)
-- KO intravariability across 1000 simulated one-strain-per-SynComs (Fig S1B)
-- Order of isolates from highest functional diversity to lowest in the four SynComs - pangenome order (Fig 1d)
-- Order of isolates from highest functional diversity to lowest in 1000 simulated one-strain-per-SynComs - pangenome order (Fig 1e)
-- Correlation R2 value calculation from 1000 in-silico SynComs between functional diversity and root colonization (Fig S13)
-- The plant-specificity of KOs calculated by the fold change of isolates with the KO in Root vs Input (Fig 5bce)
+- KO intravariability across the four SynComs (Fig S1A).
+- KO intravariability across 1000 simulated one-strain-per-SynComs (Fig S1B).
+- Order of isolates from highest functional diversity to lowest in the four SynComs - pangenome order (Fig 1d).
+- Order of isolates from highest functional diversity to lowest in 1000 simulated one-strain-per-SynComs - pangenome order (Fig 1e).
+- Correlation R2 value calculation from 1000 in-silico SynComs between functional diversity and root colonization (Fig S13).
+- The plant-specificity of KOs calculated by the fold change of isolates with the KO in Root vs Input (Fig 5bce).
 - The fold change of Root vs Input of KOs across plants (Core) (Fig 5F, S28).
-- Top 70 isolates in the root microbiome (Isolates from highest abundance to lowest that together make 70% relative abundance) (Fig 4a)
-- Top 90 isolates in the root microbiome (Isolates from highest abundance to lowest that together make 90% relative abundance) (Fig 5g, S30)
+- Top 70 isolates in the root microbiome (Isolates from highest abundance to lowest that together make 70% relative abundance) (Fig 4a).
+- Top 90 isolates in the root microbiome (Isolates from highest abundance to lowest that together make 90% relative abundance) (Fig 5g, S30).
+
+Also a python script is included that calculates the Barnard statistic to assess whether specific KOs are overrepresented in the root colonizing part of multiple families versus the non-root colonizing part (Figure 5g). 
 
 ## Family R2
 
-Rscripts to calculate the effect of families and Burkholderiaceae genera on the PERMANOVA R2 effect of SynComs and Hosts (Fig 4a)
+Rscripts to calculate the effect of families and Burkholderiaceae genera on the PERMANOVA R2 effect of SynComs and Hosts (Fig 4a).
 
 ## sPLS-DA
 
-Rscripts to do Sparse Partial Least Squares Discriminant Analysis to investigate which KOs from a bacterial family play a role in the difference between hosts or SynComs subsetted for one or multiple SynComs (Fig 4bc)
+Rscripts to do Sparse Partial Least Squares Discriminant Analysis to investigate which KOs from a bacterial family play a role in the difference between hosts or SynComs subsetted for one or multiple SynComs (Fig 4bc).
 
 ## DESeq2 
 
