@@ -7490,7 +7490,7 @@ samples_df_sub_3 <- subset(samples_df_sub_2, samples_df_sub_2$Inoculum == "LjSC"
 KO_SSC_only_2 <- t(t(KO_SSC_only)/rowSums(t(KO_SSC_only)))
 KO_SSC_ex_only_2 <- t(t(KO_SSC_ex_only)/rowSums(t(KO_SSC_ex_only)))
 
-KOs <- empty_vector_all_2_all_sub[empty_vector_all_2_all_sub$Group == "Pseudomonadacaea no dominators LjSC", ]
+KOs <- empty_vector_all_2_all_sub[empty_vector_all_2_all_sub$Group == "Pseudomonadacaea_no_dominators_LjSC", ]
 KOs_Lj <- KOs$KO[KOs$Data == "Lj"]
 KOs_At <- KOs$KO[KOs$Data == "At"]
 
@@ -7597,8 +7597,8 @@ anova_and_plot <- function(df, title) {
 }
 
 # Generate plots for each data frame
-plot_At_Pseudo <- anova_and_plot(KO_SSC_only_2_At, "Barley KOs - Pseudomonadaceae")
-plot_At_other <- anova_and_plot(KO_SSC_ex_only_2_At, "Barley KOs - Other Families")
+plot_At_Pseudo <- anova_and_plot(KO_SSC_only_2_At, "Arabidopsis KOs - Pseudomonadaceae")
+plot_At_other <- anova_and_plot(KO_SSC_ex_only_2_At, "Arabidopsis KOs - Other Families")
 plot_Lj_Pseudo <- anova_and_plot(KO_SSC_only_2_Lj_2, "Lotus KOs - Pseudomonadaceae")
 plot_Lj_2_other <- anova_and_plot(KO_SSC_ex_only_2_Lj_2, "Lotus KOs - Other Families")
 
